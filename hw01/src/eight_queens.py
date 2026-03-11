@@ -19,7 +19,7 @@ def solve_n_queens(n: int) -> list[list[str]]:
                 return False
             i -= 1
             j -= 1
-        # 检查右上对角线
+        # 检查右上对角线e
         i, j = row - 1, col + 1
         while i >= 0 and j < n:
             if board[i][j] == 'Q':
